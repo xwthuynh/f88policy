@@ -29,9 +29,7 @@ from pathlib import Path
 
 
 # CONNECT DATA
-EXCEL_FILE = Path(
-    r"C:\Users\khanhhp2\OneDrive - CONG TY CO PHAN KINH DOANH F88\APPS\PolicySearch\Data.xlsx"
-)
+EXCEL_FILE = Path(__file__).resolve().parent / "Data.xlsx"
 
 @st.cache_data
 def get_data():
